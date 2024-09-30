@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    font-family: "Plus Jakarta Sans", sans-seri !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* main class */
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222;
+    margin-right: 0.7rem;
+}
+/* footer page */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;    
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info-social{
+    width: 100%;
+    font-size: 1.4rem;
+    
+}
+.f-info-social i{
+    margin-right: 1rem;
+}
+.f-info{
+    width: 100%;
+    display: flex;
+    height: 8rem;
+    text-align: center;
+    background-color:#ebebeb ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    /* align-content: flex-end; */
+    
+    /* margin-bottom: 0rem; */
+    /* position: absolute; */
+    /* bottom: 0rem; */
+}
+
+
+/* Card */
+.listing-card{
+    border:none ;
+    margin-bottom:2rem ;
+}
+.card-img-top{
+    border-radius: 1rem ;
+    width: 100% ;
+    object-fit: cover ;
+}
+.card-body{
+    padding: 0 ;
+}
+.card-text p{
+    font-weight: 400 ;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* card effect:hover */
+.listing-link:hover{
+    opacity: 0.8;
+}
+/* new page */
+.add-btn{
+    text-align: center;
+}
+.add-btn button{
+    background-color: #fe424d;
+    border: none;
+    width: 5rem;
+    
+}
+/* show page */
+.show-img{
+    height: 50vh;
+}
+.btn-show{
+    background-color: #fe424d;
+    border: none;
+    width: 4rem;
+}
+.show-card{
+   padding: 0;
+}
+
+/* Map styling */
+#map { 
+    height: 15rem;
+    width: 25rem; 
+}
+

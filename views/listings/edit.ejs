@@ -1,0 +1,55 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+<div class="row">
+  <div class="col-8 offset-2">  <br><br>
+            
+    <h3>Edit Listing</h3>
+    <form action="/listings/<%= listing._id %>?_method=PUT" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3" >
+            <label for="title" class="form-label">Title</label>
+           <input type="text" placeholder="Enter Title" name="listing[title]" value="<%= listing.title %>" class="form-control" required>
+           <div class="invalid-feedback">Please enter title</div>
+        </div>
+        <div class="mb-3" >
+            <label for="description" class="form-label">Description</label>
+           <textarea name="listing[description]" placeholder="Enter description"  cols="20" id=""  class="form-control" required><%= listing.description %></textarea>
+           <div class="invalid-feedback">Please enter description</div>
+        </div>
+
+        <div class="mb-3 row" >
+          
+          <img src="<%= originalImageUrl %>" width="5rem" >
+              
+        </div>
+        <div class="mb-3" >
+            <label for="image" class="form-label">Upload New Image</label>
+            <input type="file" placeholder="Enter image URL/link" name="listing[image]" class="form-control">            
+        </div>
+
+        <div class="mb-3" >
+            <label for="location" class="form-label">Location</label>
+            <input type="text" placeholder="jaipur,Rajsathan " name="listing[location]" value="<%= listing.location %>" class="form-control" required>
+            <div class="invalid-feedback">Location should be valid</div>
+        </div>
+      <div class="row">
+        <div class="mb-3 col-md-8"  >
+            <label for="country" class="form-label">Country</label>
+            <input type="text" placeholder="India" name="listing[country]" value="<%= listing.country %>" class="form-control" required>
+            <div class="invalid-feedback">country name should be valid</div>
+        </div>
+        <div class="mb-3 col-md-4" >
+            <label for="price" class="form-label">Price
+            </label>
+            <input type="number" placeholder="1200" name="listing[price]" value="<%= listing.price %>" class="form-control" required>
+            <div class="invalid-feedback">Price should be valid</div>
+        </div>
+      </div> 
+     <div class="add-btn">
+        <button class="btn btn-dark " >Add</button>
+      </div>
+        <br><br>
+    </form>
+  </div>  
+</div> 
+    
+</body>
